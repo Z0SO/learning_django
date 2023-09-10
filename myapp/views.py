@@ -6,7 +6,7 @@ from . import forms
 
 
 def index(request):
-    titulo = 'Pagina Principan en Django'
+    titulo = 'Pagina Principal en Django'
 
     return render(
         request,

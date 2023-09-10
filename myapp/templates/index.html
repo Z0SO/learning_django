@@ -1,6 +1,12 @@
 {% extends 'layouts/base.html' %}
 
+{% load static %}
+
 {% block content %}
 <h1>{{title}}</h1>
+
+<!-- imagen -->
+<img src="{% static 'autokill.jpg' %}">
+
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque velit natus cumque dicta! Magnam atque praesentium non rerum doloremque cupiditate molestias quidem unde labore temporibus. Commodi quasi expedita at quisquam.</p>
 {% endblock content %}

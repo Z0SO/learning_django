@@ -10,9 +10,9 @@
     <br>
     
     {% for proyecto in proyectos %}
-    <ul>
-        <li>{{proyecto.name}}</li>
-    </ul>
+        <article class="card">    
+            <span>{{proyecto.name}}</span>
+        </article>
     {% endfor %}
 </p>
 {% endblock content %}

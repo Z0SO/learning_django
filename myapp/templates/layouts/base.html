@@ -1,13 +1,31 @@
-<nav>
-    <ul>
-        <li><a href="{% url 'root' %}">Home</a></li>
-        <li><a href="{% url 'proyectos_lista' %}">Proyectos</a></li>
-        <li><a href="{% url 'tareas_lista' %}">Tareas</a></li>
-        <li><a href="{% url 'about' %}">About</a></li>
-        <li><a href="{% url 'tareas_new' %}">Nueva Tarea</a></li>
-        <li><a href="{% url 'proyectos_new' %}">Nuevo Proyecto</a></li>
-    </ul>
-</nav>
+{% load static %}
 
-{% block content %}
-{% endblock content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}">
+    <title>Aplicacion Django</title>
+</head>
+<body>
+
+    <nav class="navbar_main">
+        <ul>
+            <li><a href="{% url 'root' %}">Home</a></li>
+            <li><a href="{% url 'proyectos_lista' %}">Proyectos</a></li>
+            <li><a href="{% url 'tareas_lista' %}">Tareas</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'tareas_new' %}">Nueva Tarea</a></li>
+            <li><a href="{% url 'proyectos_new' %}">Nuevo Proyecto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        {% block content %}
+        {% endblock content %}            
+    </main>
+
+</body>
+</html>
