@@ -1,0 +1,14 @@
+{% extends '../layouts/base.html' %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{nuevo_proyecto.as_p}}
+
+    <button>
+        Send 🔥
+    </button>
+
+</form>
+{% endblock content %}

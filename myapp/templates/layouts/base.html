@@ -1,10 +1,11 @@
 <nav>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/projects">Proyectos</a></li>
-        <li><a href="/tasks">Tareas</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/task_form">Nueva Tarea</a></li>
+        <li><a href="{% url 'root' %}">Home</a></li>
+        <li><a href="{% url 'proyectos_lista' %}">Proyectos</a></li>
+        <li><a href="{% url 'tareas_lista' %}">Tareas</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'tareas_new' %}">Nueva Tarea</a></li>
+        <li><a href="{% url 'proyectos_new' %}">Nuevo Proyecto</a></li>
     </ul>
 </nav>
 
