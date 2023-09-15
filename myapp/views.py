@@ -34,7 +34,7 @@ def tasks(request):
 
     lista_tareas = models.Task.objects.all()
 
-    titulo = 'Tareas'
+    titulo = 'Taresdfgsdfgsdfgsdfg'
     return render(request, 'tasks/tasks.html', {'tareas': titulo, 'tasks': lista_tareas})
 
 
